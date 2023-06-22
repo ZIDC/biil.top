@@ -1,0 +1,143 @@
+<View id="1" did="0" type="LinearLayout">
+<ppt>width=-1
+height=42dp
+orientation=vertical
+backgroundcolor=#50c4e5
+gravity=center_vertical</ppt>
+<event></event>
+</View>
+<View id="2" did="1" type="TextView">
+<ppt>width=-2
+height=-2
+text=jzvd视频播放器
+textsize=16sp
+textcolor=#ffffff
+layout_marginleft=10dp</ppt>
+<event></event>
+</View>
+<View id="4" did="0" type="LinearLayout">
+<ppt>width=-1
+height=200dp
+orientation=vertical
+background=black</ppt>
+<event></event>
+</View>
+<View id="5" did="0" type="Button">
+<ppt>width=-2
+height=-2
+text=按钮5</ppt>
+<event><eventItme type="clicki">
+
+
+
+
+uigo("mian1.iyu")
+
+/.//加载播放器资源
+ss(filePath+"/res.apk",resPath)
+cls(sss.dex,"com.xc.util.ContextUtil",cls)
+javanew(cu,cls,"android.content.Context",activity)
+javax(r,cu,cls,"reflectAssetManager","String",resPath)
+javax(null,cu,cls,"setResAndTheme")
+
+
+//添加播放器到线性布局内
+cls(sss.dex,"cn.jzvd.JzvdStdSpeed",jssCls)
+syso(jssCls)
+javanew(ss.jz,jssCls,"android.content.Context",activity)
+nvw(ss.jz,4)
+
+
+//设置播放地址  注意 添加播放器要立即设置播放地址.否则会显示播放错误
+s url="https://1080p.huyall.com/play/QbYvOoOd/index.m3u8"
+s title="播放测试"
+cls(sss.dex,"cn.jzvd.Jzvd",jzvdCls)
+javax(null,ss.jz,jzvdCls,"setUp","String",url,"String",title)
+
+
+//播放器内核选择.
+//----ijk内核
+cls(sss.dex,"cn.jzvd.demo.CustomMedia.JZMediaIjk",ijkCls)
+//----system内核
+cls(sss.dex,"cn.jzvd.JZMediaSystem",systemCls)
+//----exo内核
+cls(sss.dex,"cn.jzvd.demo.CustomMedia.JZMediaExo",exoCls)
+//应用内核到播放器
+javax(null,ss.jz,jzvdCls,"setMediaInterface","java.lang.Class",systemCls)
+
+//开始播放
+cls(sss.dex,"cn.jzvd.JzvdStd",jzvdStdCls)
+//javax(null,ss.jz,jzvdStdCls,"startVideo")
+
+//设置封面
+fn xcsdk.setPoster(ss.jz,"https://img1.baidu.com/it/u=1547547075,3380467396&fm=26&fmt=auto")</eventItme></event>
+</View>
+<UIEventset><eventItme type="loadingComplete">/.
+iapp 接入jzvd播放插件,
+原作者QQ:204403418  只是代上传
+QQ群:1038915575   有问题可以反馈群
+禁止二次上传
+此代码仅供学习使用,禁止用于违法用途.
+./
+
+s sdkPath="/jzvd/1.1"
+javax(filePath,activity,"android.content.ContextWrapper","getFilesDir")
+ss(filePath+sdkPath,filePath)
+syso(filePath)
+//复制sdk文件到data目录
+fuzs("@sdk.zip",filePath,is)
+//加载sdk
+fn xcsdk.initSdk(sdkPath)
+
+//加载播放器资源
+ss(filePath+"/res.apk",resPath)
+cls(sss.dex,"com.xc.util.ContextUtil",cls)
+javanew(cu,cls,"android.content.Context",activity)
+javax(r,cu,cls,"reflectAssetManager","String",resPath)
+javax(null,cu,cls,"setResAndTheme")
+
+
+//添加播放器到线性布局内
+cls(sss.dex,"cn.jzvd.JzvdStdSpeed",jssCls)
+syso(jssCls)
+javanew(ss.jz,jssCls,"android.content.Context",activity)
+nvw(ss.jz,4)
+
+
+//设置播放地址  注意 添加播放器要立即设置播放地址.否则会显示播放错误
+s url="https://1080p.huyall.com/play/QbYvOoOd/index.m3u8"
+s title="播放测试"
+cls(sss.dex,"cn.jzvd.Jzvd",jzvdCls)
+javax(null,ss.jz,jzvdCls,"setUp","String",url,"String",title)
+
+
+//播放器内核选择.
+//----ijk内核
+cls(sss.dex,"cn.jzvd.demo.CustomMedia.JZMediaIjk",ijkCls)
+//----system内核
+cls(sss.dex,"cn.jzvd.JZMediaSystem",systemCls)
+//----exo内核
+cls(sss.dex,"cn.jzvd.demo.CustomMedia.JZMediaExo",exoCls)
+//应用内核到播放器
+javax(null,ss.jz,jzvdCls,"setMediaInterface","java.lang.Class",systemCls)
+
+//开始播放
+cls(sss.dex,"cn.jzvd.JzvdStd",jzvdStdCls)
+//javax(null,ss.jz,jzvdStdCls,"startVideo")
+
+//设置封面
+fn xcsdk.setPoster(ss.jz,"https://biil.top/jz.jpg")</eventItme><eventItme type="downkey">f(st_kC == 4)
+{
+  cls(sss.dex,"cn.jzvd.Jzvd",jzvdCls)
+  javax(is,null,jzvdCls,"backPress")
+  // 如果是全屏就不退出页面 退出全屏状态
+  f(!is)
+  {
+    //
+    end()
+  }
+}</eventItme><eventItme type="stop">//暂停
+cls(sss.dex,"cn.jzvd.Jzvd",jzvdCls)
+javax(null,null,jzvdCls,"goOnPlayOnPause")</eventItme><eventItme type="destroy">//销毁播放器
+cls(sss.dex,"cn.jzvd.Jzvd",jzvdCls)
+javax(null,null,jzvdCls,"releaseAllVideos")</eventItme></UIEventset>

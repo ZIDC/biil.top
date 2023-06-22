@@ -1,0 +1,149 @@
+<View id="1" did="0" type="LinearLayout">
+<ppt>width=-1
+height=200dp
+orientation=vertical
+background=black</ppt>
+<event></event>
+</View>
+<View id="8" did="1" type="RelativeLayout">
+<ppt>width=-1
+height=-1</ppt>
+<event></event>
+</View>
+<View id="9" did="8" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="4" did="0" type="EditText">
+<ppt>width=-1
+height=-2
+text=
+hint=输入播放直链
+singleLine=true</ppt>
+<event></event>
+</View>
+<View id="2" did="0" type="Button">
+<ppt>width=-1
+height=-2
+text=直链地址播放</ppt>
+<event><eventItme type="clicki">ug(4,"text",url)
+javax(null,ss.videoView,"xyz.doikki.videoplayer.player.BaseVideoView","release")
+javax(null,ss.videoView,"xyz.doikki.videoplayer.player.BaseVideoView","setUrl","String",url)
+javax(null,ss.videoView,"xyz.doikki.videoplayer.player.BaseVideoView","start")</eventItme></event>
+</View>
+<View id="5" did="0" type="EditText">
+<ppt>width=-1
+height=-2
+text=https://m.bilibili.com/video/BV19r4y1Y7pK
+hint=输入视频链接</ppt>
+<event></event>
+</View>
+<View id="6" did="0" type="Button">
+<ppt>width=-1
+height=-2
+text=视频嗅探解析播放</ppt>
+<event><eventItme type="clicki">cls("xyz.doikki.dkplayer.VideoSniffing$Call",callCls)
+syso(callCls)
+javacb(call, callCls)
+{
+  sgsz(st_aS,0,url)
+  sgsz(st_aS,1,head)
+  syso(url)
+  syso(head)
+  f(st_mD?"success")
+  {
+    //视频资源
+    javax(null,ss.videoView,"xyz.doikki.videoplayer.player.BaseVideoView","release")
+    javax(null,ss.videoView,"xyz.doikki.videoplayer.player.BaseVideoView","setUrl","String",url,"java.util.Map",head)
+    javax(null,ss.videoView,"xyz.doikki.videoplayer.player.BaseVideoView","start")
+  }
+}
+
+ug(5,"text",url)
+javax(null,null,"xyz.doikki.dkplayer.Player","startSniffing","android.content.Context",activity,"String",url,callCls,call)</eventItme></event>
+</View>
+<View id="7" did="0" type="Button">
+<ppt>width=-1
+height=-2
+text=发送弹幕</ppt>
+<event><eventItme type="clicki">//发送弹幕 true自己的 false别人的
+java(null,ss.player,"xyz.doikki.dkplayer.Player.addDanmaku","String","我是弹幕","boolean",false)
+</eventItme></event>
+</View>
+<UIEventset><eventItme type="loading">//创建播放器
+javanew(player,"xyz.doikki.dkplayer.Player")
+syso(player)
+ss player=player
+javax(ss.videoView,player,"xyz.doikki.dkplayer.Player","getView","android.content.Context",activity)
+//添加播放器
+nvw(ss.videoView,9)
+
+//播放
+s url="http://sf1-cdn-tos.huoshanstatic.com/obj/media-fe/xgplayer_doc_video/mp4/xgplayer-demo-360p.mp4"
+javax(null,ss.videoView,"xyz.doikki.videoplayer.player.BaseVideoView","setUrl","String",url)
+
+//设置标题
+java(null,player,"xyz.doikki.dkplayer.Player.setTitle","String","我是视频标题")
+
+//设置封面图
+java(null,player,"xyz.doikki.dkplayer.Player.setThumb","String","https://img01.sogoucdn.com/app/a/201025/b716a81fc5a466fa59cdbc1c781bdd89")
+
+//开始播放
+//javax(null,ss.videoView,"xyz.doikki.videoplayer.player.BaseVideoView","start")
+
+
+//设置选集
+//取数据
+javanew(list,"java.util.ArrayList")
+s i=0
+syso(i)
+for(1;20)
+{
+  s(i+1,i)
+  ss("第"+i+"集",name)
+  javanew(map,"java.util.HashMap")
+  //map至少要填入一个name值用于文本显示
+  java(null,map,"java.util.HashMap.put","Object","name","Object",name)
+  java(null,list,"java.util.ArrayList.add","Object",map)
+}
+//设置数据到列表  参数
+cls("xyz.doikki.videocontroller.component.adapter.AnthologyListAdapter$Call",aicCallCls)
+//点集数按钮后回调方法
+javacb(aicCall,aicCallCls)
+{
+  //点击项下标 从0开始
+  sgsz(st_aS,0,index)
+//  syso(index)
+  //点击项的map数据
+  sgsz(st_aS,1,map)
+  syso(map)
+
+  tw("点击了选项")
+  
+  //处理后需要手动改变当前选中下标
+  javax(null,player,"xyz.doikki.dkplayer.Player","setAnthologyActive","int",index)
+}
+//设置到播放器
+javax(null,player,"xyz.doikki.dkplayer.Player","setAnthologyData","java.util.ArrayList",list,aicCallCls,aicCall)
+
+
+//不显示选集按钮
+//javax(null,player,"xyz.doikki.dkplayer.Player","hideAnthology")
+
+//修改选集按钮文本
+javax(null,player,"xyz.doikki.dkplayer.Player","setAnthologyText","String","换源")
+//</eventItme><eventItme type="destroy">//界面退出销毁播放器
+java(null,ss.videoView,"xyz.doikki.videoplayer.player.BaseVideoView.release")
+    </eventItme><eventItme type="downkey">f(st_kC == 4)
+{
+  javax(is,ss.videoView,"xyz.doikki.videoplayer.player.BaseVideoView","onBackPressed")
+  //如果是全屏就不退出页面 只需处理is为false时的情况
+  f(!is)
+  {
+    end()
+  }
+}</eventItme><eventItme type="pause">//离开页面暂停播放
+java(null,ss.videoView,"xyz.doikki.videoplayer.player.BaseVideoView.pause")
+</eventItme></UIEventset>

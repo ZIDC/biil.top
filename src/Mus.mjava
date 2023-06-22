@@ -1,0 +1,42 @@
+//调用
+//模块名Mus
+//call(null,"mjava","Mus.toast","一条提示","#ff737373","#ffededed",30,48,0,30)
+
+
+import android.graphics.drawable.GradientDrawable;
+import android.graphics.drawable.Drawable;
+import android.graphics.Color;
+import android.widget.TextView;
+import android.widget.LinearLayout$LayoutParams;
+import android.widget.LinearLayout;
+import android.view.Gravity;
+import android.widget.Toast;
+
+public static void toast(String i,String textcolor,String backgroundcolor,int elevation,int gravity,int x,int y)
+{
+	Toast toast= Toast.makeText(activity,"",0);
+	toast.setGravity(gravity,x,y);
+	LinearLayout ne=new LinearLayout(activity);
+	LinearLayout ne2=new LinearLayout(activity);
+	ne2.addView(ne);
+	LinearLayout.LayoutParams params=(LinearLayout.LayoutParams) ne.getLayoutParams();  
+	params.topMargin=5;
+	params.bottomMargin=5;
+	params.leftMargin=15;
+	params.rightMargin=15;
+	ne.setLayoutParams(params);
+    GradientDrawable drawable=new GradientDrawable();
+    drawable.setShape(GradientDrawable.RECTANGLE);
+    drawable.setGradientType(GradientDrawable.RECTANGLE);
+    drawable.setCornerRadius(13);
+    drawable.setColor(Color.parseColor(backgroundcolor));
+    ne2.setBackground(drawable);
+    ne2.setElevation(elevation);
+	ne.setGravity(Gravity.CENTER);
+	TextView te=new TextView(activity);
+	ne.addView(te);
+	te.setText(i);
+	te.setTextColor(Color.parseColor(textcolor));
+	toast.setView(ne2);
+	toast.show();
+}
