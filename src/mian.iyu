@@ -432,7 +432,7 @@ else
           else
           {
             s jpg = "@1.png"
-            s jpga="https://biil.top/1.jpg"
+            s jpga=""
           }
           ula(sss.ssklist,6=title,9=jpg,13=jsu,14=purl,15=jpga)
         }
@@ -1028,7 +1028,7 @@ java(null,window,"android.view.Window.setSoftInputMode","int",flag)
 //call(null,"mjava","Mus.toast","jfn","#ff000000","#fff9f9f9",3,40,0,60)
 
 
-sss url = "https://biil.top"
+sss url = ""
 
 //设置工具栏
 utb(65)
