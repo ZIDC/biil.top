@@ -1,0 +1,1282 @@
+<View id="1" did="0" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+BackgroundColor=#fffffbf5</ppt>
+<event></event>
+</View>
+<View id="2" did="1" type="LinearLayout">
+<ppt>ps=顶栏
+width=-1
+height=60dp
+orientation=vertical
+gravity=top|center</ppt>
+<event></event>
+</View>
+<View id="3" did="2" type="LinearLayout">
+<ppt>width=-1
+height=-2
+orientation=vertical
+</ppt>
+<event></event>
+</View>
+<View id="10" did="2" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=horizontal
+gravity=left|center</ppt>
+<event></event>
+</View>
+<View id="62" did="10" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=horizontal
+layout_weight=1
+gravity=left|center</ppt>
+<event></event>
+</View>
+<View id="11" did="62" type="TextView">
+<ppt>width=-2
+height=-1
+text=ACG动漫
+gravity=bottom|left
+paddingLeft=25dp
+textSize=23sp
+textColor=#ff535353
+typeface=@MiSans-ExtraLight.ttf
+paddingBottom=10dp</ppt>
+<event></event>
+</View>
+<View id="80" did="62" type="ProgressBar">
+<ppt>ps=更新加载
+width=10dp
+height=10dp
+style=16842874
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="63" did="10" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+layout_weight=1
+gravity=right|center</ppt>
+<event></event>
+</View>
+<View id="64" did="63" type="TextView">
+<ppt>width=-2
+height=-1
+text=ACG动漫
+gravity=bottom|left
+paddingLeft=25dp
+textSize=23sp
+textColor=#ff535353
+typeface=@MiSans-ExtraLight.ttf
+paddingBottom=10dp
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="65" did="63" type="Toolbar">
+<ppt>width=-2
+height=-2
+app_title=
+layout_marginTop=5dp</ppt>
+<event></event>
+</View>
+<View id="4" did="1" type="RelativeLayout">
+<ppt>ps=主布局
+width=-1
+height=-1</ppt>
+<event></event>
+</View>
+<View id="5" did="4" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="6" did="5" type="CardView">
+<ppt>width=-1
+height=-1
+app_CardBackgroundColor=#fff6f3ef
+app_CardElevation=0.5dp
+app_CardcornerRadius=27dp
+layout_marginBottom=-30dp
+layout_marginTop=3dp
+</ppt>
+<event></event>
+</View>
+<View id="7" did="6" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="8" did="7" type="CardView">
+<ppt>ps=主布局
+width=-1
+height=-1
+app_CardcornerRadius=27dp
+app_CardElevation=0dp
+layout_marginTop=0.5dp
+layout_marginLeft=0.5dp
+layout_marginRight=0.5dp
+app_CardBackgroundColor=#00000000</ppt>
+<event></event>
+</View>
+<View id="9" did="8" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="14" did="9" type="LinearLayout">
+<ppt>ps=列表布局
+width=-1
+height=-1
+orientation=vertical
+gravity=bottom</ppt>
+<event></event>
+</View>
+<View id="59" did="14" type="LinearLayout">
+<ppt>ps=列表
+width=-1
+height=-1
+orientation=vertical
+gravity=center
+//layout_marginTop=220dp</ppt>
+<event></event>
+</View>
+<View id="12" did="59" type="RecyclerView">
+<ppt>width=-1
+height=-1
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="60" did="59" type="ProgressBar">
+<ppt>width=40dp
+height=40dp
+style=16842874</ppt>
+<event></event>
+</View>
+<View id="61" did="59" type="TextView">
+<ppt>width=-2
+height=-2
+text=加载中
+typeface=@MiSans-ExtraLight.ttf
+textSize=15sp
+layout_marginTop=8dp</ppt>
+<event></event>
+</View>
+<View id="13" did="14" type="LinearLayout">
+<ppt>ps=补偿空间
+width=-1
+height=220dp
+orientation=vertical
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="15" did="8" type="LinearLayout">
+<ppt>ps=底部导航
+width=-1
+height=-1
+orientation=vertical
+gravity=bottom</ppt>
+<event></event>
+</View>
+<View id="71" did="4" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=bottom</ppt>
+<event></event>
+</View>
+<View id="73" did="71" type="RelativeLayout">
+<ppt>width=-1
+height=-1</ppt>
+<event></event>
+</View>
+<View id="75" did="73" type="RelativeLayout">
+<ppt>ps=搜索列表布局
+width=-1
+height=-1
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="79" did="75" type="RelativeLayout">
+<ppt>width=-1
+height=-1</ppt>
+<event></event>
+</View>
+<View id="76" did="75" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center
+BackgroundColor=#3d6d6d6d
+</ppt>
+<event></event>
+</View>
+<View id="77" did="76" type="ProgressBar">
+<ppt>width=45dp
+height=45dp
+style=16842874
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="78" did="76" type="RecyclerView">
+<ppt>width=-1
+height=-1
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="74" did="73" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=bottom</ppt>
+<event></event>
+</View>
+<View id="16" did="74" type="CardView">
+<ppt>width=-1
+height=220dp
+app_CardBackgroundColor=#a0fffbf5
+app_CardElevation=30dp
+app_CardcornerRadius=26dp
+layout_marginBottom=-30dp
+</ppt>
+<event></event>
+</View>
+<View id="66" did="16" type="RelativeLayout">
+<ppt>width=-1
+height=-1</ppt>
+<event></event>
+</View>
+<View id="69" did="16" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=bottom</ppt>
+<event></event>
+</View>
+<View id="70" did="69" type="LinearLayout">
+<ppt>width=-1
+height=60dp
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="17" did="16" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="18" did="17" type="CardView">
+<ppt>width=-1
+height=-1
+app_CardcornerRadius=26dp
+app_CardElevation=0dp
+app_CardBackgroundColor=#00ffffff</ppt>
+<event></event>
+</View>
+<View id="19" did="18" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=bottom|center</ppt>
+<event></event>
+</View>
+<View id="48" did="19" type="LinearLayout">
+<ppt>width=-1
+height=-2
+orientation=vertical
+gravity=center
+</ppt>
+<event></event>
+</View>
+<View id="67" did="48" type="CardView">
+<ppt>width=50dp
+height=6dp
+layout_marginTop=15dp
+app_CardElevation=0dp
+app_CardBackgroundColor=#78c4c4c4
+app_CardcornerRadius=7dp</ppt>
+<event></event>
+</View>
+<View id="47" did="19" type="LinearLayout">
+<ppt>width=-1
+height=68dp
+orientation=vertical
+gravity=center
+layout_marginBottom=10dp
+layout_marginTop=5dp</ppt>
+<event></event>
+</View>
+<View id="49" did="47" type="CardView">
+<ppt>width=-1
+height=-1
+app_CardBackgroundColor=#fff3f3f3
+app_CardElevation=0dp
+app_CardcornerRadius=10dp
+layout_marginLeft=18dp
+layout_marginRight=18dp
+layout_marginTop=15dp
+layout_marginBottom=5dp</ppt>
+<event></event>
+</View>
+<View id="50" did="49" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="51" did="50" type="CardView">
+<ppt>width=-1
+height=-1
+app_CardcornerRadius=10dp
+app_CardElevation=0dp
+layout_marginTop=0.6dp
+layout_marginBottom=0.6dp
+layout_marginLeft=0.6dp
+layout_marginRight=0.6dp</ppt>
+<event></event>
+</View>
+<View id="52" did="51" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="53" did="52" type="EditText">
+<ppt>width=-1
+height=-1
+text=
+hint=请输入搜索内容
+textSize=13sp
+textColor=#ff610b0b
+textColorHint=#ff787878
+textColorHighlight=#ffff6969
+Background=@
+typeface=@MiSans-ExtraLight.ttf
+singleLine=true
+layout_marginRight=50dp
+layout_marginLeft=8dp</ppt>
+<event></event>
+</View>
+<View id="54" did="51" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=right|center</ppt>
+<event></event>
+</View>
+<View id="55" did="54" type="CardView">
+<ppt>width=35dp
+height=35dp
+layout_marginRight=5dp
+app_CardElevation=0dp
+app_CardcornerRadius=10dp
+app_CardBackgroundColor=#fffafafa</ppt>
+<event></event>
+</View>
+<View id="56" did="55" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center
+background=selectableitem
+clickable=true</ppt>
+<event><eventItme type="clicki">us(78,"visibility",8)
+us(77,"visibility",0)
+ug(53,"text",nr)
+ula(sss.ssklist, null)
+f(nr == "")
+{
+}
+else
+{
+  t()
+  {
+    ss(sss.url+"/index.php/vod/search.html?wd="+nr,sjp)
+    hs(sjp,ji)
+    fw("$ss.jk", ji)
+    f(ji == "null")
+    {
+      us(78,"visibility",8)
+      us(77,"visibility",0)
+    }
+    else
+    {
+      
+      ufnsui()
+      {
+        fr("$ss.jk",acgjk)
+        sj(acgjk,"部影片&lt;/div&gt;&lt;/div&gt;","&lt;div class=\"fixedGroup\"&gt;",zcjq1)
+        fr("@ss.jar",gsq)
+        ss(zcjq1+gsq,kpl)
+        sj(kpl,"&lt;div class=\"module-card-item-class\"&gt;",null,zb)
+        sl(zb,"&lt;div class=\"module-card-item-class\"&gt;",fg)
+        for(fgwc;fg)
+        {
+          sj(fgwc,"&lt;strong&gt;","&lt;/strong&gt;",title)
+          sj(fgwc,"data-original=\"","\"",jpg)
+          sj(fgwc,"&lt;div class=\"module-item-note\"&gt;","&lt;/div&gt;",jsu)
+          sj(fgwc,"&lt;a href=\"","\"",purl)
+          //判断是否有链接
+          f(jpg ? "http")
+          {
+            s jpga = jpg
+          }
+          else
+          {
+            s jpg = "@1.png"
+            s jpga="https://biil.top/1.jpg"
+          }
+          ula(sss.ssklist,6=title,9=jpg,13=jsu,14=purl,15=jpga)
+        }
+        ufnsui()
+        {
+          uls(78,sss.ssklist,"list.iyu",-1,-2)
+          us(78,"visibility",0)
+          us(77,"visibility",8)
+          
+        }
+      }
+      
+      
+      
+    }
+  }
+  
+}</eventItme></event>
+</View>
+<View id="57" did="56" type="ImageView">
+<ppt>width=20dp
+height=20dp
+src=@41347fdd5eef8682f26f0b5a900276ab..png</ppt>
+<event></event>
+</View>
+<View id="72" did="51" type="LinearLayout">
+<ppt>ps=搜索点击
+width=-1
+height=-1
+orientation=vertical
+</ppt>
+<event><eventItme type="clicki">
+
+
+dhas(dh, 16, "translationY", 0, 240)
+dh(dh, "duration", 300)
+dh(dh, "start")
+us(72,"visibility",8)
+
+t()
+{
+  stop("250")
+  ufnsui()
+  {
+us(75,"visibility",0)    
+    dha(dh, false, true)
+dh(dh, "duration", 300)
+us(75, "dh", dh)
+  }
+}</eventItme></event>
+</View>
+<View id="21" did="19" type="LinearLayout">
+<ppt>width=-1
+height=73dp
+orientation=horizontal
+gravity=left|center
+layout_marginBottom=10dp
+layout_marginTop=6dp</ppt>
+<event></event>
+</View>
+<View id="23" did="21" type="LinearLayout">
+<ppt>ps=acg
+width=-1
+height=-1
+orientation=vertical
+gravity=center
+layout_weight=1</ppt>
+<event></event>
+</View>
+<View id="22" did="23" type="CardView">
+<ppt>width=50dp
+height=50dp
+app_CardElevation=0.1dp
+app_CardcornerRadius=13dp
+app_CardBackgroundColor=#40c4c4c4</ppt>
+<event></event>
+</View>
+<View id="24" did="22" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="26" did="24" type="ProgressBar">
+<ppt>ps=acg加载进度
+width=25dp
+height=25dp
+style=16842874
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="27" did="24" type="LinearLayout">
+<ppt>ps=acg点击事件
+width=-1
+height=-1
+orientation=vertical
+gravity=center
+background=selectableitem
+clickable=true</ppt>
+<event><eventItme type="clicki">//acg按钮22,动漫电影按钮28
+//电视剧按钮36,海外剧按钮42
+//60加载进度条,61加载文本,12列表
+//27acg加载按钮,26acg加载进度条
+
+
+
+//acg
+ss acg = "true"
+dhas(dh, 22, "scaleY", 1.0,1.2)
+dh(dh, "duration", 300)
+dh(dh, "start")
+dhas(dh, 22, "scaleX", 1.0,1.2)
+dh(dh, "duration", 300)
+dh(dh, "start")
+dhon(dh)
+{
+fn logo.acg()
+}
+us(11,"text","ACG动漫")
+
+
+
+
+
+//动漫电影
+f(ss.动漫电影 == "true")
+{
+  ss 动漫电影 = "false"
+  dhas(dh, 28, "scaleY", 1.2,0.8)
+  dh(dh, "duration", 300)
+  dh(dh, "start")
+  dhas(dh, 28, "scaleX", 1.2,0.8)
+  dh(dh, "duration", 300)
+  dh(dh, "start")
+}
+
+
+
+//电视剧
+f(ss.电视剧 == "true")
+{
+  ss 电视剧 = "false"
+  dhas(dh, 36, "scaleY", 1.2,0.8)
+  dh(dh, "duration", 300)
+  dh(dh, "start")
+  dhas(dh, 36, "scaleX", 1.2,0.8)
+  dh(dh, "duration", 300)
+  dh(dh, "start")
+  
+}
+
+
+
+
+
+//海外
+f(ss.海外 == "true")
+{
+  ss 海外 = "false"
+  dhas(dh, 42, "scaleY", 1.2,0.8)
+  dh(dh, "duration", 300)
+  dh(dh, "start")
+  dhas(dh, 42, "scaleX", 1.2,0.8)
+  dh(dh, "duration", 300)
+  dh(dh, "start")
+}</eventItme></event>
+</View>
+<View id="25" did="27" type="ImageView">
+<ppt>width=32dp
+height=32dp
+src=@4de983d1ef8d23acdbd2b111597f4e2b..png</ppt>
+<event></event>
+</View>
+<View id="33" did="21" type="LinearLayout">
+<ppt>ps=动漫电影
+width=-1
+height=-1
+orientation=vertical
+gravity=center
+layout_weight=1</ppt>
+<event></event>
+</View>
+<View id="28" did="33" type="CardView">
+<ppt>width=50dp
+height=50dp
+app_CardElevation=0dp
+app_CardcornerRadius=13dp
+app_CardBackgroundColor=#40c4c4c4</ppt>
+<event></event>
+</View>
+<View id="29" did="28" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="30" did="29" type="ProgressBar">
+<ppt>ps=动漫电影加载进度
+width=25dp
+height=25dp
+style=16842874
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="31" did="29" type="LinearLayout">
+<ppt>ps=动漫电影点击事件
+width=-1
+height=-1
+orientation=vertical
+gravity=center
+background=selectableitem
+clickable=true</ppt>
+<event><eventItme type="clicki">//acg按钮22,动漫电影按钮28
+//电视剧按钮36,海外剧按钮42
+//60加载进度条,61加载文本,12列表
+//31动漫电影加载按钮,30动漫电影加载进度条
+
+//动漫电影
+
+
+
+ss 动漫电影 = "true"
+
+//动漫电影
+dhas(dh, 28, "scaleY", 0.8,1.2)
+dh(dh, "duration", 300)
+dh(dh, "start")
+dhas(dh, 28, "scaleX", 0.8,1.2)
+dh(dh, "duration", 300)
+dh(dh, "start")
+dhon(dh)
+{
+fn logo.动漫电影()
+}
+us(11,"text","动漫电影")
+
+
+
+
+
+
+
+
+
+
+
+
+
+//acg
+f(ss.acg == "true")
+{
+  ss acg = "false"
+  dhas(dh, 22, "scaleY", 1.2,0.8)
+  dh(dh, "duration", 300)
+  dh(dh, "start")
+  dhas(dh, 22, "scaleX", 1.2,0.8)
+  dh(dh, "duration", 300)
+  dh(dh, "start")
+  
+}
+
+
+
+
+
+
+//电视剧
+f(ss.电视剧 == "true")
+{
+  ss 电视剧 = "false"
+  dhas(dh, 36, "scaleY", 1.2,0.8)
+  dh(dh, "duration", 300)
+  dh(dh, "start")
+  dhas(dh, 36, "scaleX", 1.2,0.8)
+  dh(dh, "duration", 300)
+  dh(dh, "start")
+}
+
+
+
+
+
+
+//海外
+f(ss.海外 == "true")
+{
+  ss 海外 = "false"
+  dhas(dh, 42, "scaleY", 1.2,0.8)
+  dh(dh, "duration", 300)
+  dh(dh, "start")
+  dhas(dh, 42, "scaleX", 1.2,0.8)
+  dh(dh, "duration", 300)
+  dh(dh, "start")
+}</eventItme></event>
+</View>
+<View id="32" did="31" type="ImageView">
+<ppt>width=38dp
+height=38dp
+src=@9d80d822429cff9c42b9a04bc27694e8..png</ppt>
+<event></event>
+</View>
+<View id="35" did="21" type="LinearLayout">
+<ppt>ps=电视剧
+width=-1
+height=-1
+orientation=vertical
+gravity=center
+layout_weight=1</ppt>
+<event></event>
+</View>
+<View id="36" did="35" type="CardView">
+<ppt>width=50dp
+height=50dp
+app_CardElevation=0dp
+app_CardcornerRadius=13dp
+app_CardBackgroundColor=#40c4c4c4</ppt>
+<event></event>
+</View>
+<View id="37" did="36" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="38" did="37" type="ProgressBar">
+<ppt>ps=电视剧加载进度
+width=25dp
+height=25dp
+style=16842874
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="39" did="37" type="LinearLayout">
+<ppt>ps=电视剧点击事件
+width=-1
+height=-1
+orientation=vertical
+gravity=center
+background=selectableitem
+clickable=true</ppt>
+<event><eventItme type="clicki">//acg按钮22,动漫电影按钮28
+//电视剧按钮36,海外剧按钮42
+//60加载进度条,61加载文本,12列表
+//39电视剧加载按钮,38电视剧加载进度条
+
+
+ss 电视剧 = "true"
+
+//电视剧
+dhas(dh, 36, "scaleY", 0.8,1.2)
+dh(dh, "duration", 300)
+dh(dh, "start")
+dhas(dh, 36, "scaleX", 0.8,1.2)
+dh(dh, "duration", 300)
+dh(dh, "start")
+dhon(dh)
+{
+fn logo.电视剧()
+}
+us(11,"text","电视剧")
+
+
+
+
+
+
+
+
+
+
+
+
+
+//动漫电影
+f(ss.动漫电影 == "true")
+{
+  ss 动漫电影 = "false"
+  dhas(dh, 28, "scaleY", 1.2,0.8)
+  dh(dh, "duration", 300)
+  dh(dh, "start")
+  dhas(dh, 28, "scaleX", 1.2,0.8)
+  dh(dh, "duration", 300)
+  dh(dh, "start")
+}
+
+
+
+//acg
+f(ss.acg == "true")
+{
+  ss acg = "false"
+  dhas(dh, 22, "scaleY", 1.2,0.8)
+  dh(dh, "duration", 300)
+  dh(dh, "start")
+  dhas(dh, 22, "scaleX", 1.2,0.8)
+  dh(dh, "duration", 300)
+  dh(dh, "start")
+  
+}
+
+
+
+
+
+//海外
+f(ss.海外 == "true")
+{
+  ss 海外 = "false"
+  dhas(dh, 42, "scaleY", 1.2,0.8)
+  dh(dh, "duration", 300)
+  dh(dh, "start")
+  dhas(dh, 42, "scaleX", 1.2,0.8)
+  dh(dh, "duration", 300)
+  dh(dh, "start")
+}</eventItme></event>
+</View>
+<View id="40" did="39" type="ImageView">
+<ppt>width=40dp
+height=40dp
+src=@5711e135ba1e699b56b40c1b8748bf3e..png</ppt>
+<event></event>
+</View>
+<View id="41" did="21" type="LinearLayout">
+<ppt>ps=海外剧
+width=-1
+height=-1
+orientation=vertical
+gravity=center
+layout_weight=1</ppt>
+<event></event>
+</View>
+<View id="42" did="41" type="CardView">
+<ppt>width=50dp
+height=50dp
+app_CardElevation=0dp
+app_CardcornerRadius=13dp
+app_CardBackgroundColor=#40c4c4c4
+</ppt>
+<event></event>
+</View>
+<View id="43" did="42" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="44" did="43" type="ProgressBar">
+<ppt>ps=海外加载进度
+width=25dp
+height=25dp
+style=16842874
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="45" did="43" type="LinearLayout">
+<ppt>ps=海外点击事件
+width=-1
+height=-1
+orientation=vertical
+gravity=center
+background=selectableitem
+clickable=true</ppt>
+<event><eventItme type="clicki">//acg按钮22,动漫电影按钮28
+//电视剧按钮36,海外剧按钮42
+//60加载进度条,61加载文本,12列表
+//45电视剧加载按钮,44电视剧加载进度条
+
+
+
+
+ss 海外 = "true"
+
+//海外
+dhas(dh, 42, "scaleY", 0.8,1.2)
+dh(dh, "duration", 300)
+dh(dh, "start")
+dhas(dh, 42, "scaleX", 0.8,1.2)
+dh(dh, "duration", 300)
+dh(dh, "start")
+dhon(dh)
+{
+fn logo.海外剧()
+}
+us(11,"text","海外电视剧")
+
+
+
+
+
+
+
+
+
+
+
+
+
+//动漫电影
+f(ss.动漫电影 == "true")
+{
+  ss 动漫电影 = "false"
+  dhas(dh, 28, "scaleY", 1.2,0.8)
+  dh(dh, "duration", 300)
+  dh(dh, "start")
+  dhas(dh, 28, "scaleX", 1.2,0.8)
+  dh(dh, "duration", 300)
+  dh(dh, "start")
+}
+
+
+
+//acg
+f(ss.acg == "true")
+{
+  ss acg = "false"
+  dhas(dh, 22, "scaleY", 1.2,0.8)
+  dh(dh, "duration", 300)
+  dh(dh, "start")
+  dhas(dh, 22, "scaleX", 1.2,0.8)
+  dh(dh, "duration", 300)
+  dh(dh, "start")
+  
+}
+
+
+
+
+
+//电视剧
+f(ss.电视剧 == "true")
+{
+  ss 电视剧 = "false"
+  dhas(dh, 36, "scaleY", 1.2,0.8)
+  dh(dh, "duration", 300)
+  dh(dh, "start")
+  dhas(dh, 36, "scaleX", 1.2,0.8)
+  dh(dh, "duration", 300)
+  dh(dh, "start")
+}</eventItme></event>
+</View>
+<View id="46" did="45" type="ImageView">
+<ppt>width=30dp
+height=30dp
+src=@13b17018eee01777cb8144044492cc61..png
+layout_marginTop=5dp</ppt>
+<event></event>
+</View>
+<View id="34" did="19" type="LinearLayout">
+<ppt>ps=拓展空间
+width=-1
+height=30dp
+orientation=vertical
+//visibility=gone</ppt>
+<event></event>
+</View>
+<View id="68" did="1" type="ImageView">
+<ppt>width=-2
+height=-2
+src=17301567
+visibility=gone</ppt>
+<event></event>
+</View>
+<UIEventset><eventItme type="loading">//acg按钮22,动漫电影按钮28
+//电视剧按钮36,海外剧按钮42
+//60加载进度条,61加载文本,12列表
+
+//27acg加载按钮,26acg加载进度条
+
+/.fn plugUtil.init()
+syso("init")
+fn plugUtil.loadILib()
+./
+uycl("#fffffbf5", true)
+s a = "pxztl"
+swh(a, h)
+s px = h
+zpd(px, c)
+s+(c, 10,sk)
+ss(sk+"dp",skk)
+//us(3,"height",skk)
+java(cs,activity,"android.app.Activity.getWindow")
+java(cs2,cs,"android.view.Window.getDecorView")
+java(null,cs2,"android.view.View.setSystemUiVisibility","int","8192")
+s flag = 16
+java(window,activity,"android.app.Activity.getWindow")
+java(null,window,"android.view.Window.setSoftInputMode","int",flag)
+
+
+//call(null,"mjava","Mus.toast","jfn","#ff000000","#fff9f9f9",3,40,0,60)
+
+
+sss url = "https://biil.top"
+
+//设置工具栏
+utb(65)
+
+
+
+
+
+loadjar("Blur.zip",loadjara)
+cls(loadjara,"com.lumyuan.lt.seven.Widget.BlurView",cls)
+javanew(BlurView,cls,"Context",activity,"android.util.AttributeSet",null)
+javax(null,BlurView,cls,"setBlurRadius","float",80)
+javax(null,BlurView,cls,"setOverlayColor","int",16777215)
+nvw(BlurView,66)
+
+
+
+
+t()
+{
+  stop("100")
+  ufnsui()
+  {
+    
+    
+    //acg
+    ss acg = "true"
+    dhas(dh, 22, "scaleY", 1.0,1.2)
+    dh(dh, "duration", 300)
+    dh(dh, "start")
+    dhas(dh, 22, "scaleX", 1.0,1.2)
+    dh(dh, "duration", 300)
+    dh(dh, "start")
+    
+    
+    dhas(dh, 28, "scaleY", 1.0,0.8)
+    dh(dh, "duration", 280)
+    dh(dh, "start")
+    dhas(dh, 28, "scaleX", 1.0,0.8)
+    dh(dh, "duration", 280)
+    dh(dh, "start")
+    
+    dhas(dh, 36, "scaleY", 1.0,0.8)
+    dh(dh, "duration", 280)
+    dh(dh, "start")
+    dhas(dh, 36, "scaleX", 1.0,0.8)
+    dh(dh, "duration", 280)
+    dh(dh, "start")
+    
+    dhas(dh, 42, "scaleY", 1.0,0.8)
+    dh(dh, "duration", 280)
+    dh(dh, "start")
+    dhas(dh, 42, "scaleX", 1.0,0.8)
+    dh(dh, "duration", 280)
+    dh(dh, "start")
+  }
+}
+
+
+
+
+
+//列表不可见
+us(12,"visibility",8)
+
+//列表加载进度,提示
+us(60,"visibility",0)
+us(61,"visibility",0)
+us(61,"text","Acg.加载中 (°ー°〃)")
+
+//acg按钮将不可点击
+us(27,"visibility",8)
+us(26,"visibility",0)
+
+//重置列表
+ula(sss.list, null)
+
+
+
+
+
+t()
+{
+  ss(sss.url+"/index.php/vod/type/id/26.html",url)
+  hs(url,acg)
+  fw("$jj.jk", acg)
+  f(acg == "null")
+  {
+    ufnsui()
+    {
+      //失败
+      
+      //列表加载进度,提示
+      us(60,"visibility",0)
+      us(61,"visibility",0)
+      us(61,"text","失败呢.˚‧º·(˚ ˃̣̣̥᷄⌓˂̣̣̥᷅ )‧º·˚")
+      
+      //acg按钮释放
+      us(27,"visibility",0)
+      us(26,"visibility",8)
+      
+      //列表不可见
+      us(12,"visibility",8)
+      
+    }
+  }
+  else
+  {
+    ufnsui()
+    {
+      fr("$jj.jk",acgjk)
+      sj(acgjk,"&lt;span&gt;新片上线&lt;span","&lt;span&gt;排行榜&lt;span",zcjq1)
+      sj(zcjq1,"&lt;div class=\"module-items module-poster-items-base\"&gt;",null,zcjq2)
+      fr("@xz.jar",gsq)
+      ss(zcjq2+gsq,kpl)
+      sj(kpl,"&lt;a href=",null,zb)
+      sl(zb,"&lt;a href=",fg)
+      for(fgwc;fg)
+      {
+        sj(fgwc,"class=\"module-poster-item-title\"&gt;","&lt;/div&gt;",title)
+        sj(fgwc,"data-original=\"","\"",jpg)
+        sj(fgwc,"&lt;div class=\"module-item-note\"&gt;","&lt;/div&gt;",jsu)
+        sj(fgwc,"\"","\"",purl)
+        //判断是否有链接
+        f(jpg ? "http")
+        {
+          s jpga = jpg
+        }
+        else
+        {
+          s jpg = "@1.png"
+        }
+        ula(sss.list,6=title,9=jpg,13=jsu,14=purl,15=jpg)
+      }
+      ufnsui()
+      {
+        uls(12,sss.list,"list.iyu",-1,-2)
+        //列表加载进度,提示
+        us(60,"visibility",8)
+        us(61,"visibility",8)
+        us(61,"text","(๑´∀`๑)")
+        //acg按钮释放
+        us(27,"visibility",0)
+        us(26,"visibility",8)
+        //列表可见
+        us(12,"visibility",0)
+        
+      }
+    }
+  }
+}
+
+
+
+
+gvs(65,mTba)
+javags(mMode,null,"android.graphics.PorterDuff$Mode","SRC_ATOP")
+java(color,null,"android.graphics.Color.parseColor","String","#ffcfc8bd")
+java(mTbaBackSrc,mTba,"androidx.appcompat.widget.Toolbar.getNavigationIcon")
+java(null,mTbaBackSrc,"android.graphics.drawable.Drawable.setColorFilter","int",color,"android.graphics.PorterDuff$Mode",mMode)
+java(mTbaMenuSrc,mTba,"androidx.appcompat.widget.Toolbar.getOverflowIcon")
+java(null,mTbaMenuSrc,"android.graphics.drawable.Drawable.setColorFilter","int",color,"android.graphics.PorterDuff$Mode",mMode)
+java(tv,mTba,"android.view.ViewGroup.getChildAt","int",0)
+s color = "#ffa515ff"
+fn 着色.控件着色(60,color)
+fn 着色.控件着色(26,color)
+fn 着色.控件着色(30,color)
+fn 着色.控件着色(38,color)
+fn 着色.控件着色(44,color)
+
+
+</eventItme><eventItme type="loadingComplete">ss 海外 = "false"
+ss 电视剧 = "false"
+ss 动漫电影 = "false"
+
+/.gvs(16,view)
+//获取控件view对象
+java(null,view,"android.view.View.measure","int",0,"int",0)
+//测量控件的高宽度----参数为测量范围
+java(height,view,"android.view.View.getMeasuredHeight")
+//获取高宽度
+zpd(height,toDip)
+us(66,"height",toDip)
+./
+
+s a = 0
+s b = 0
+s c = "#fffffbf5|#c0fffbf5|#00fffbf5"
+s d = "#333333"
+s e = "bottomtop"
+ngde(a, b, c, d, e, f)
+us(70,"background",f)
+
+
+loadjar("Blur.zip",loadjara)
+cls(loadjara,"com.lumyuan.lt.seven.Widget.BlurView",cls)
+javanew(BlurView,cls,"Context",activity,"android.util.AttributeSet",null)
+javax(null,BlurView,cls,"setBlurRadius","float",70)
+javax(null,BlurView,cls,"setOverlayColor","int",16777215)
+nvw(BlurView,79)
+
+fn Update.a()</eventItme><eventItme type="menu">case 关于软件|null|0|1:
+
+break</eventItme><eventItme type="downkey">f(st_kC == "24")
+{
+}
+f(st_kC == "25")
+{
+}
+f(st_kC == "4")
+{
+  ufnsui()
+  {
+    
+    ug(72,"visibility",ssdk)
+    f(ssdk == 8)
+    {
+      f(ss.搜索打开 == "true")
+      {
+      }
+      else
+      {
+        
+        ss 搜索打开 = "true"
+        
+        
+        
+        dhas(dh, 16, "translationY", 240,0)
+        dh(dh, "duration", 300)
+        dh(dh, "start")
+        us(72,"visibility",0)
+        dha(dh, true, false)
+        dh(dh, "duration", 300)
+        us(75, "dh", dh)
+        dhon(dh)
+        {
+          us(75,"visibility",8)
+          ss 搜索打开 = "false"
+        }
+        
+        
+        
+      }
+    }
+    else
+    {
+      end()
+    }
+    
+  }
+}</eventItme></UIEventset>

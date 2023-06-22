@@ -1,0 +1,67 @@
+//初始化sdk
+fn initSdk(path)
+fn xcsdk.initData()
+javax(sss.dex,sss.dataMap,"java.util.HashMap","get","Object","dex")
+javax(name,activity,"android.content.ContextWrapper","getPackageName")
+fn xcsdk.loadDex("dex",path)
+javax(sss.dex,sss.dataMap,"java.util.HashMap","get","Object","dex")
+
+
+cls(sss.dex,"com.xc.util.VideoUtil",sss.videoUtilCls)
+cls(sss.dex,"com.xc.util.ContextUtil",sss.contextUtilCls)
+cls(sss.dex,"cn.jzvd.JzvdStdSpeed",sss.jzvdStdSpeedCls)
+cls(sss.dex,"cn.jzvd.Jzvd",ssz.jzvdCls)
+cls(sss.dex,"cn.jzvd.demo.CustomMedia.JZMediaIjk",sss.ijkCls)
+cls(sss.dex,"cn.jzvd.JZMediaSystem",sss.systemCls)
+cls(sss.dex,"cn.jzvd.demo.CustomMedia.JZMediaExo",sss.exoCls)
+cls(sss.dex,"cn.jzvd.JzvdStd",sss.jzvdStdCls)
+end fn
+
+
+//加载dex
+fn loadDex(k,path)
+javax(dex,sss.dataMap,"java.util.HashMap","get","Object",k)
+f(dex==null)
+{
+  javax(cachePath,activity,"android.content.ContextWrapper","getCacheDir")
+  javax(filePath,activity,"android.content.ContextWrapper","getFilesDir")
+  ss(cachePath+"/",cachePath)
+  ss(filePath+path+"/lib",libPath)
+  ss(filePath+path+"/classes.dex",filePath)
+  javax(classLoader,activity,"android.content.ContextWrapper","getClassLoader")
+  javanew(dexClassLoader,"dalvik.system.DexClassLoader","String",filePath,"String",cachePath,"String",libPath,"java.lang.ClassLoader",classLoader)
+  fn xcsdk.setData(k,dexClassLoader)
+}
+end fn
+
+//初始化全局变量
+fn initData()
+javags(map,null,"com.iapp.app.Aid_javaCode","ss_dim")
+f(map==null)
+{
+  javanew(hm,"java.util.HashMap")
+  javass(c, null, "com.iapp.app.Aid_javaCode", "ss_dim", hm)
+}
+javags(sss.dataMap,null,"com.iapp.app.Aid_javaCode","ss_dim")
+end fn
+
+//保存变量
+fn setData(k,v)
+javax(null,sss.dataMap,"java.util.HashMap","put","Object",k,"Object",v)
+end fn
+
+
+
+
+
+
+
+//视频方法
+//预加载  有bug
+fn startLoad(jzvd,isStart)
+javax(null,null,sss.videoUtilCls,"startLoad",sss.jzvdStdCls,jzvd,"boolean",isStart)
+end fn
+//设置封面图
+fn setPoster(jzvd,url)
+javax(null,null,sss.videoUtilCls,"setPoster","android.content.Context",activity,sss.jzvdStdCls,jzvd,"String",url)
+end fn

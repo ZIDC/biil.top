@@ -1,0 +1,135 @@
+<View id="1" did="0" type="LinearLayout">
+<ppt>width=-1
+height=-2
+orientation=vertical
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="2" did="1" type="CardView">
+<ppt>width=-1
+height=-2
+app_CardElevation=5dp
+layout_marginLeft=17dp
+layout_marginRight=17dp
+layout_marginTop=45dp
+layout_marginBottom=45dp
+app_CardcornerRadius=14dp</ppt>
+<event></event>
+</View>
+<View id="3" did="2" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="4" did="3" type="LinearLayout">
+<ppt>width=-1
+height=55dp
+orientation=vertical
+gravity=bottom|left</ppt>
+<event></event>
+</View>
+<View id="5" did="4" type="TextView">
+<ppt>width=-2
+height=-2
+text=(∗❛ั∀❛ั∗)✧*。
+textSize=16sp
+textColor=#ff000000
+layout_marginLeft=17dp
+layout_marginBottom=15dp</ppt>
+<event></event>
+</View>
+<View id="6" did="3" type="LinearLayout">
+<ppt>width=-1
+height=-2
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="7" did="6" type="ScrollView">
+<ppt>width=-1
+height=-1</ppt>
+<event></event>
+</View>
+<View id="8" did="7" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="9" did="8" type="TextView">
+<ppt>width=-2
+height=-2
+text=加载中....
+layout_marginLeft=25dp
+layout_marginRight=25dp
+layout_marginTop=19dp
+textColor=#ff000000
+textSize=14sp
+textIsSelectable=true</ppt>
+<event></event>
+</View>
+<View id="10" did="3" type="LinearLayout">
+<ppt>width=-1
+height=-2
+orientation=horizontal
+gravity=right|center
+layout_marginRight=26dp
+layout_marginTop=20dp
+layout_marginBottom=20dp</ppt>
+<event></event>
+</View>
+<View id="14" did="10" type="CardView">
+<ppt>width=60dp
+height=29dp
+app_CardcornerRadius=3dp
+app_CardElevation=0dp
+layout_marginRight=10dp
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="15" did="14" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center
+background=selectableitem
+clickable=true</ppt>
+<event></event>
+</View>
+<View id="16" did="15" type="TextView">
+<ppt>width=-2
+height=-2
+text=下次
+textSize=10sp
+typeface=@MiSans-ExtraLight.ttf
+textColor=#ff000000</ppt>
+<event></event>
+</View>
+<View id="11" did="10" type="CardView">
+<ppt>width=60dp
+height=29dp
+app_CardcornerRadius=3dp
+app_CardElevation=0dp
+app_CardBackgroundColor=#fffcfcfc</ppt>
+<event></event>
+</View>
+<View id="12" did="11" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=centerbackground=selectableitem
+clickable=true
+gravity=center</ppt>
+<event><eventItme type="clicki">
+
+hws("https://github.com/ZIDC/biil.top/releases")</eventItme></event>
+</View>
+<View id="13" did="12" type="TextView">
+<ppt>width=-2
+height=-2
+text=更新
+textSize=13sp
+textColor=#ff6f156e</ppt>
+<event></event>
+</View>
+<UIEventset></UIEventset>

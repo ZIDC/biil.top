@@ -1,0 +1,174 @@
+//--------------sdk代码块(尽量不要修改)----------
+
+//初始化sdk
+fn init()
+fn plugUtil.initPageData()
+fn plugUtil.initData()
+fn plugUtil.initBaseUtil()
+end fn
+
+//加载扩展库
+fn loadILib()
+javax(name,activity,"android.content.ContextWrapper","getPackageName")
+javax(filePath,activity,"android.content.ContextWrapper","getFilesDir")
+s corePath = "/core/lib"
+f(name=="com.iapp.app")
+{
+  //调试运行加载库 加载资源
+  cls("com.i.util.ContextUtil",testCls)
+  f(testCls == null){
+    //拷贝
+    ss(filePath+corePath,libPath)
+    ss(filePath+corePath+"/isdk.apk",libPath)
+    
+    fdir("@",path)
+    ss(path+"../apk",apk)
+    ss(path+"../apk/classes2.dex",p)
+    ss(path+"../apk/classes.dex",new)
+    
+    ft(p,new,is)
+    fj(apk, libPath, c)
+    ft(new,p,is)
+    
+    //
+    //fc("$isdk.so", libPath, c)
+    ss(filePath+corePath+"/ires.apk",resPath)
+    fc("@isdk.so", resPath, c)
+    
+    
+    
+    //加载库
+    cls(sss.baseDex,"com.i.util.BaseUtil",buCls)
+    javax(null,null,buCls,"loadApk","String",libPath,"android.content.Context",activity)
+    fn plugUtil.setResource()
+  }
+} else {
+  //打包运行只加载资源
+  ss(filePath+corePath+"/ires.apk",libPath)
+  fc("@isdk.so", libPath, c)
+  fn plugUtil.setResource()
+}
+//初始化iappUtil工具
+cls("com.i.util.IappUtil",iappUtilCls)
+cls("com.iapp.app.Aid_javaCode",x)
+javanew(j,"com.iapp.app.Aid_javaCode","android.app.Activity",activity)
+javax(null,null,iappUtilCls,"setJavaCodeClass","Object",j)
+end fn
+
+
+fn setResource()
+javax(filePath,activity,"android.content.ContextWrapper","getFilesDir")
+ss(filePath+"/core/lib/ires.apk",resPath)
+cls(sss.baseDex,"com.i.util.BaseUtil",buCls)
+javax(bc,null,buCls,"getBaseContext","android.app.Activity",activity)
+javanew(uc,"com.i.util.ContextUtil","android.content.Context",activity)
+javax(res,uc,"com.i.util.ContextUtil","reflectAssetManager","String",resPath)
+end fn
+
+//加载dex包
+fn loadDex(path,key)
+javax(dex,sss.dataMap,"java.util.HashMap","get","Object",key)
+f(dex==null)
+{
+  javax(cachePath,activity,"android.content.ContextWrapper","getCacheDir")
+  javax(filePath,activity,"android.content.ContextWrapper","getFilesDir")
+  ss(cachePath+"/",cachePath)
+  ss(filePath+path+"/lib",libPath)
+  ss(filePath+path+"/classes.dex",filePath)
+  javax(classLoader,activity,"android.content.ContextWrapper","getClassLoader")
+  javanew(dexClassLoader,"dalvik.system.DexClassLoader","String",filePath,"String",cachePath,"String",libPath,"java.lang.ClassLoader",classLoader)
+  fn plugUtil.setData(key,dexClassLoader)
+}else{
+  fn plugUtil.setData(key,dex)
+}
+end fn
+
+
+//初始化全局变量
+fn initData()
+javags(map,null,"com.iapp.app.Aid_javaCode","ss_dim")
+f(map==null)
+{
+  javanew(hm,"java.util.HashMap")
+  javass(c, null, "com.iapp.app.Aid_javaCode", "ss_dim", hm)
+}
+javags(sss.dataMap,null,"com.iapp.app.Aid_javaCode","ss_dim")
+end fn
+
+//保存变量
+fn setData(k,v)
+javax(null,sss.dataMap,"java.util.HashMap","put","Object",k,"Object",v)
+end fn
+
+//获取全局变量
+fn getData(key)
+javax(val,sss.dataMap,"java.util.HashMap","get","Object",key)
+fn plugUtil.setPageData(key,val)
+end fn
+
+//设置页面变量类
+fn initPageData()
+ss a=123
+cls("com.iapp.app.run.mian",cl)
+clssm(cl, "field", fields)
+
+sgszl(fields,len)
+s i=0
+f(len&gt;0)
+{
+  for(1;len)
+  {
+    sgsz(fields,i,field)
+    f(field?"HashMap"){
+      sl(field,".",fields)
+      sgszl(fields,len)
+      s(len-1,len)
+      sgsz(fields,len,fieldname)
+      javags(map,activity,"com.iapp.app.run.mian",fieldname)
+      f(map != null && map != "null")
+      {
+        javax(val,map,"java.util.HashMap","get","Object","a")
+        ss a=field
+        sl(field,".",keys)
+        sgsz(keys,7,name)
+        sss pageDataField=name
+        break
+      }
+    }
+    s(i+1,i)
+  }
+}
+end fn
+
+//设置页面变量值
+fn setPageData(k,v)
+javags(j, activity, "com.iapp.app.run.mian", sss.pageDataField)
+javax(null,j,"java.util.HashMap","put","Object",k,"Object",v)
+end fn
+
+
+//加载基础工具  baseUtil
+fn initBaseUtil()
+fr("@config.json",config)
+json(config, jo)
+//获取dex并拷贝
+json(jo, "get", "baseUtil", base64)
+javax(bytes,null,"android.util.Base64","decode","String",base64,"int",0)
+javax(hashcode,base64,"java.lang.String","hashCode")
+
+javax(filePath,activity,"android.content.ContextWrapper","getFilesDir")
+ss(filePath+"/core/"+hashcode+"/classes.dex",filePath)
+fe(filePath,is)
+f(!is)
+{
+  btoo(bytes, filePath)
+}
+ss("/core/"+hashcode,path)
+//加载
+fn plugUtil.loadDex(path,"base")
+fn plugUtil.getData("base")
+sss baseDex = ss.base
+//开启反射兼容
+cls(sss.baseDex,"com.i.util.BaseUtil",buCls)
+javax(null,null,buCls,"init","android.app.Activity",activity)
+end fn

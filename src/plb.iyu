@@ -1,0 +1,138 @@
+<View id="1" did="0" type="LinearLayout">
+<ppt>width=-1
+height=-2
+orientation=vertical
+gravity=center
+layout_marginTop=5dp
+layout_marginBottom=5dp
+layout_marginLeft=5dp
+layout_marginRight=5dp</ppt>
+<event></event>
+</View>
+<View id="2" did="1" type="CardView">
+<ppt>width=-1
+height=-1
+app_CardcornerRadius=8dp
+app_CardElevation=0dp
+app_CardBackgroundColor=#ffeaeaea
+layout_marginLeft=5dp
+layout_marginRight=5dp
+layout_marginTop=5dp
+layout_marginBottom=5dp</ppt>
+<event></event>
+</View>
+<View id="3" did="2" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+background=selectableitem
+clickable=true</ppt>
+<event><eventItme type="clicki">ulag(st_vW,14,url)
+
+ulag(st_vW,6,bt)
+
+ss(sss.jxbt+" "+bt,sss.playbt)
+
+f(url == null)
+{
+//  end()
+}
+else
+{
+  ufnsui()
+  {
+    t()
+    {
+      hs(url,jx)
+      f(jx == null)
+      {
+        ufnsui()
+        {
+          //数据解析失败
+        }
+      }
+      else
+      {
+        ufnsui()
+        {
+          fw("$sjjx1.jk", jx)
+          fr("$sjjx1.jk",sjy)
+          sj(sjy,"var player_aaaa=","&lt;/script&gt;",playbe)
+          json(playbe, jo)
+          json(jo, "get", "url", sss.playurl)
+//          java(zjsj,null,"android.util.Base64.decode","String",加密文本,"int",0)
+//          javanew(yw,"java.lang.String","byte[]",zjsj)
+      //    sutf8to(yw, sss.playurl)
+          sj(sjy,"选集播放","&lt;/span&gt;",dq)
+          sj(dq,"&lt;span class=\"module-tab-value\"&gt;",null,dqzy)
+          us(24,"text",dqzy)     
+  us(26,"visibility",0)
+  us(27,"visibility",8)
+ uigo("play1.iyu")
+
+       }
+//--添加列表          
+
+        }
+      }
+    }
+  }
+}
+
+
+</eventItme></event>
+</View>
+<View id="4" did="3" type="CardView">
+<ppt>width=-1
+height=-1
+app_CardElevation=0dp
+app_CardcornerRadius=8dp
+layout_marginTop=0.7dp
+layout_marginBottom=0.7dp
+layout_marginLeft=0.7dp
+layout_marginRight=0.7dp
+app_CardBackgroundColor=#fff7f7f7</ppt>
+<event></event>
+</View>
+<View id="5" did="4" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=bottom|center</ppt>
+<event></event>
+</View>
+<View id="6" did="5" type="TextView">
+<ppt>width=-1
+height=-1
+text=标题
+//typeface=@MiSans-ExtraLight.ttf
+textSize=13sp
+textColor=#ff3c3c3c
+gravity=center
+singleLine=true
+ellipsize=end
+layout_marginLeft=5dp
+layout_marginRight=5dp
+layout_marginTop=8dp
+layout_marginBottom=8dp</ppt>
+<event></event>
+</View>
+<View id="14" did="0" type="TextView">
+<ppt>width=-2
+height=-2
+text=url
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="15" did="0" type="TextView">
+<ppt>width=-2
+height=-2
+text=图片
+visibility=gone</ppt>
+<event></event>
+</View>
+<UIEventset><eventItme type="loading">//list 界面(载入事件)
+
+//ulag(st_vW,9,ImageView)
+//ulag(st_vW ,15, id)
+</eventItme></UIEventset>

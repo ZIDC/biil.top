@@ -1,0 +1,179 @@
+<View id="1" did="0" type="LinearLayout">
+<ppt>width=-1
+height=250dp
+orientation=vertical
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="2" did="1" type="CardView">
+<ppt>width=-1
+height=-1
+app_CardcornerRadius=23dp
+app_CardElevation=0dp
+app_CardBackgroundColor=#fff3f3f3
+layout_marginLeft=27dp
+layout_marginRight=27dp
+layout_marginTop=35dp
+layout_marginBottom=15dp</ppt>
+<event></event>
+</View>
+<View id="3" did="2" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+background=selectableitem
+clickable=true</ppt>
+<event><eventItme type="clicki">
+
+
+
+ulag(st_vW,14,url)
+ulag(st_vW,6,sss.jxbt)
+ulag(st_vW,15,sss.jxjpg)
+
+
+
+
+//判断链接
+t()
+{
+  ss(sss.url+url,url)
+  hs(url,jx)
+  sj(jx,"观看记录","立即播放",xj)
+  sj(xj,"&lt;div class=\"module-mobile-play\"&gt;&lt;a href=\"","\"",jxurl)
+  f(jxurl == null)
+  {
+    ufnsui()
+    {
+      call(null,"mjava","Mus.toast","数据错误(⋟﹏⋞)","#ff000000","#fff9f9f9",3,40,0,60)
+    }
+  }
+  else
+  {
+    ufnsui()
+    {
+      ss(sss.url+jxurl,sss.jxurl)
+//      uigo("play.iyu")
+fn lbso.twu()
+    }
+  }
+  
+  }</eventItme></event>
+</View>
+<View id="4" did="3" type="CardView">
+<ppt>width=-1
+height=-1
+app_CardElevation=0dp
+app_CardcornerRadius=23dp
+layout_marginTop=0.7dp
+layout_marginBottom=0.7dp
+layout_marginLeft=0.7dp
+layout_marginRight=0.7dp
+app_CardBackgroundColor=#fffffbf5</ppt>
+<event></event>
+</View>
+<View id="5" did="4" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=bottom|center
+background=selectableitem
+clipChildren=true</ppt>
+<event></event>
+</View>
+<View id="6" did="5" type="TextView">
+<ppt>width=-1
+height=40dp
+text=标题
+//typeface=@MiSans-ExtraLight.ttf
+textSize=16sp
+textColor=#ff3c3c3c
+gravity=bottom|left
+singleLine=true
+ellipsize=end
+layout_marginLeft=32dp
+layout_marginRight=32dp
+layout_marginBottom=15dp</ppt>
+<event></event>
+</View>
+<View id="7" did="5" type="CardView">
+<ppt>width=-1
+height=-1
+layout_marginLeft=30dp
+layout_marginRight=30dp
+layout_marginBottom=28dp
+app_CardElevation=0dp
+app_CardcornerRadius=16dp
+app_CardBackgroundColor=#00ffffff</ppt>
+<event></event>
+</View>
+<View id="8" did="7" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="9" did="8" type="ImageView">
+<ppt>width=-1
+height=-1
+scaleType=centercrop
+src=535
+</ppt>
+<event></event>
+</View>
+<View id="10" did="7" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=right|top</ppt>
+<event></event>
+</View>
+<View id="11" did="10" type="CardView">
+<ppt>width=-2
+height=-2
+app_CardcornerRadius=5dp
+app_CardElevation=0dp
+app_CardBackgroundColor=#a1ffffff
+layout_marginRight=15dp
+layout_marginTop=15dp</ppt>
+<event></event>
+</View>
+<View id="12" did="11" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="13" did="12" type="TextView">
+<ppt>width=-2
+height=-2
+text=连载中
+//typeface=@MiSans-ExtraLight.ttf
+textSize=11sp
+textColor=#ff333333
+layout_marginLeft=8dp
+layout_marginRight=8dp
+layout_marginTop=5dp
+layout_marginBottom=5dp</ppt>
+<event></event>
+</View>
+<View id="14" did="0" type="TextView">
+<ppt>width=-2
+height=-2
+text=url
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="15" did="0" type="TextView">
+<ppt>width=-2
+height=-2
+text=图片
+visibility=gone</ppt>
+<event></event>
+</View>
+<UIEventset><eventItme type="loading">//list 界面(载入事件)
+
+//ulag(st_vW,9,ImageView)
+//ulag(st_vW ,15, id)
+</eventItme></UIEventset>
