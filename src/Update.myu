@@ -25,7 +25,7 @@ us(80,"visibility",0)
 t()
 {
   hs("https://github.com/ZIDC/biil.top/releases",jcgx)
-  sj(jcgx,"&lt;strong&gt;&lt;/strong&gt;.",bbk)  
+ // sj(jcgx,"&lt;strong&gt;&lt;/strong&gt;.",bbk)  
   sj(jcgx,"&lt;div data-pjax=\"true\" data-test-selector=\"body-content\" data-view-component=\"true\" class=\"markdown-body my-3\"&gt;&lt;p&gt;","&lt;/p&gt;",更新内容)
   sj(更新内容,"最低支持版本","#",zdbb)
   f(zdbb &gt; ss.banb)
@@ -35,7 +35,7 @@ t()
       
       
 fn Update.b()
-tw("该版本已不支持正常使用")
+sss 版本限制 = "true"
       
     }
   }
@@ -91,13 +91,15 @@ t()
     {
       fn Update.c()
       us(80,"visibility",8)
+      
     }
   }
   else
   {
     ufnsui()
     {
-            us(80,"visibility",8)
+       us(80,"visibility",8)
+       
     }
   }
 }
@@ -124,7 +126,11 @@ java(null,ss.utwva,"android.app.Dialog.setOnDismissListener",".android.content.D
 {
   ufnsui()
   {
-fn Update.a()
+    f(sss.版本限制 == "true")
+    {
+      fn Update.a()
+    }
+
   }
 }
 java(null,ss.utwva,"android.app.Dialog.show")
