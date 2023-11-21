@@ -14,5 +14,8 @@
 设置拓展功能#
 记忆播放、记忆选集、内置浏览器播放、收藏
 
+软件下载地址
+https://github.com/ZIDC/biil.top/releases
+
 系统性功能#
 核心数据缓存
